@@ -24,8 +24,7 @@ spec:
               clusterid: '{{ fromClusterClaim "id.openshift.io" }} '
               clustername: '{{ fromClusterClaim "name" }}'
               ocpversion: '{{ fromClusterClaim "version.openshift.io" }}'
-              platform: '{{ fromClusterClaim "platform.open-cluster-management.io"
-                }}'
+              platform: '{{ fromClusterClaim "platform.open-cluster-management.io" }}'
               product: '{{ fromClusterClaim "product.open-cluster-management.io" }}'
             kind: ConfigMap
             metadata:
