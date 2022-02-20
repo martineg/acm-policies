@@ -1,0 +1,35 @@
+apiVersion: policy.open-cluster-management.io/v1
+kind: Policy
+metadata:
+  name: pl-managed-cluster-info
+  annotations:
+    policy.open-cluster-management.io/standards: NIST 800-53
+    policy.open-cluster-management.io/categories: CM Configuration Management
+    policy.open-cluster-management.io/controls: CM-2 Baseline Configuration
+spec:
+  disabled: false
+  remediationAction: enforce
+  policy-templates:
+  - objectDefinition:
+      apiVersion: policy.open-cluster-management.io/v1
+      kind: ConfigurationPolicy
+      metadata:
+        name: policy-build-clusterinfo
+      spec:
+        object-templates:
+        - complianceType: musthave
+          objectDefinition:
+            apiVersion: v1
+            data:
+              clusterid: '{{ fromClusterClaim "id.openshift.io" }} '
+              clustername: '{{ fromClusterClaim "name" }}'
+              ocpversion: '{{ fromClusterClaim "version.openshift.io" }}'
+              platform: '{{ fromClusterClaim "platform.open-cluster-management.io"
+                }}'
+              product: '{{ fromClusterClaim "product.open-cluster-management.io" }}'
+            kind: ConfigMap
+            metadata:
+              name: clusterinfo
+              namespace: default
+        remediationAction: inform
+        severity: low
