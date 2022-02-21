@@ -1,0 +1,17 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+bases:
+- ../base
+
+# namespace: my-namespace
+# namePrefix: dev-
+# nameSuffix: "-001"
+# commonLabels:
+#   app: bingo
+
+commonAnnotations:
+    policy.open-cluster-management.io/standards: NIST SP 800-53
+    policy.open-cluster-management.io/categories: SI System and Information Integrity
+    policy.open-cluster-management.io/controls: SI-4 Information System Monitoring
