@@ -14,7 +14,7 @@ spec:
   clusterSelector:
     matchLabels:
       local-cluster: 'true'
-      policy: 'sandbox'
+#     policy: 'sandbox'
 #  clusterSelector:
 #    matchExpressions:
 #      - {key: clustertype, operator: In, values: ["hub"]}
