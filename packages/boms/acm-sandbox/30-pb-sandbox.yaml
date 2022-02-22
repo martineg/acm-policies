@@ -18,3 +18,7 @@ subjects:
   namespace: acm-sandbox
   kind: Policy
   apiGroup: policy.open-cluster-management.io
+- name: pl-compliance-operator-install
+  namespace: acm-sandbox
+  kind: Policy
+  apiGroup: policy.open-cluster-management.io
