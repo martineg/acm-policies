@@ -7,3 +7,5 @@ bases:
 
 commonAnnotations:
   apps.open-cluster-management.io/github-branch: development
+  apps.open-cluster-management.io/reconcile-rate: high
+  apps.open-cluster-management.io/reconcile-option: replace
