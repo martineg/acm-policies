@@ -4,3 +4,4 @@ resources:
 - sb-managed-cluster-info.yaml
 - sb-imagemanifestvuln.yaml
 - sb-compliance-operator-install.yaml
+- sb-compliance-operator-e8.yaml

@@ -22,3 +22,7 @@ subjects:
   namespace: acm-sandbox
   kind: Policy
   apiGroup: policy.open-cluster-management.io
+- name: pl-compliance-operator-e8
+  namespace: acm-sandbox
+  kind: Policy
+  apiGroup: policy.open-cluster-management.io
