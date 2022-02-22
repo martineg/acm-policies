@@ -14,3 +14,7 @@ subjects:
   namespace: acm-sandbox
   kind: Policy
   apiGroup: policy.open-cluster-management.io
+- name: pl-imagemanifestvuln
+  namespace: acm-sandbox
+  kind: Policy
+  apiGroup: policy.open-cluster-management.io
