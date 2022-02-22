@@ -13,7 +13,7 @@ spec:
 #    - "cluster2"
   clusterSelector:
     matchLabels:
-      local-cluster: 'true'
+      policy: 'sandbox'
 #     policy: 'sandbox'
 #  clusterSelector:
 #    matchExpressions:
