@@ -1,0 +1,15 @@
+---
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  name: sb-compliance-operator-cis
+  namespace: acm-sandbox
+  labels:
+    subscription-pause: "false"
+  annotations:
+    apps.open-cluster-management.io/github-path: policies/policy-compliance-operator-cis/sandbox
+spec:
+  channel: acm-channels/cluster-gitops
+  placement:
+    local: true
+  
