@@ -4,8 +4,5 @@ resources:
 - sb-managed-cluster-info.yaml
 - sb-imagemanifestvuln.yaml
 - sb-compliance-operator-install.yaml
-<<<<<<< HEAD
 - sb-compliance-operator-cis.yaml
-=======
 - sb-compliance-operator-e8.yaml
->>>>>>> ba79819 (Add policy to verify for compliance with E8 security profile)
