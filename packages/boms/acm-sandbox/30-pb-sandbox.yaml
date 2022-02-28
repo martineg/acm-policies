@@ -22,7 +22,3 @@ subjects:
   namespace: acm-sandbox
   kind: Policy
   apiGroup: policy.open-cluster-management.io
-- name: pl-compliance-operator-cis
-  namespace: acm-sandbox
-  kind: Policy
-  apiGroup: policy.open-cluster-management.io
