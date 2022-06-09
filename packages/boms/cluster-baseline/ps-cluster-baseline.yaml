@@ -1,0 +1,11 @@
+apiVersion: policy.open-cluster-management.io/v1beta1
+kind: PolicySet
+metadata:
+  name: ps-cluster-baseline
+spec:
+  description: |
+    Cluster baseline policies
+  policies:
+  - pl-imagemanifestvuln
+  - pl-managed-cluster-info
+  

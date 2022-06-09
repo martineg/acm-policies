@@ -2,12 +2,13 @@
 apiVersion: apps.open-cluster-management.io/v1
 kind: Subscription
 metadata:
-  name: sb-imagemanifestvuln
-  namespace: acm-cluster-baseline
+  name: sb-policy-subscriptions
+  namespace: acm-channels
   labels:
     subscription-pause: "false"
   annotations:
-    apps.open-cluster-management.io/github-path: policies/policy-imagemanifestvuln/cluster-baseline
+    apps.open-cluster-management.io/github-path: policies/subscriptions/policysets
+    apps.open-cluster-management.io/github-branch: policysets
 spec:
   channel: acm-channels/cluster-gitops
   placement:
