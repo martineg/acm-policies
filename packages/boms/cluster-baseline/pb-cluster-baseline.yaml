@@ -1,0 +1,14 @@
+---
+apiVersion: policy.open-cluster-management.io/v1
+kind: PlacementBinding
+metadata:
+  name: pb-cluster-baseline
+  namespace: acm-cluster-baseline
+placementRef:
+  apiGroup: apps.open-cluster-management.io
+  kind: PlacementRule
+  name: pr-cluster-baseline
+subjects:
+- apiGroup: policy.open-cluster-management.io
+  kind: PolicySet
+  name: ps-cluster-baseline
